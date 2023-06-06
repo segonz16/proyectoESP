@@ -1,0 +1,10 @@
+create table `temperatura`(
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`temperatura` float not null,
+    `descripcion` varchar(50) not null,
+    `fecha_hora` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`));
+    
+   INSERT INTO `temperatura` (`temperatura`, `descripcion`) VALUES ('26.5', 'temperatura normal');
+   
+  select * from temperatura t 
